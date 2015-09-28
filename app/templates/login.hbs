@@ -5,3 +5,11 @@
   {{input value=password placeholder='Enter Password' type='password'}}
   <button type="submit">Login</button>
 </form>
+
+{{#if errorMessage}}
+  <div>
+    <p>
+      Login failed: {{errorMessage}}
+    </p>
+  </div>
+{{/if}}
