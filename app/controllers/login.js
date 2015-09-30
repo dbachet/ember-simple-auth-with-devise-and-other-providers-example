@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       this.get('session').authenticate('simple-auth-authenticator:devise', credentials).then(null, function(error) {
         var message = error.error;
         _this.set('errorMessage', message);
-      });;
+      });
     }
   }
 });
